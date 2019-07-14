@@ -1,0 +1,28 @@
+@import './styles/color';
+@import './styles/typography';
+
+html,
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: $background-color;
+    color: #c9ced2;
+    font-size: $body-font-size;
+}
+
+// global classes
+.count-size {
+    font-size: $count-size;
+}
+
+.dashboard-box {
+    .box-title {
+        background-color: $header-box-color;
+        font-size: 1.1rem;
+        padding: 8px 18px;
+    }
+
+    .box-content {
+        background-color: $background-box-color;
+        min-height: 230px;
+    }
+}

@@ -1,0 +1,14 @@
+<div class="risk-meter-container">
+    <div class="risk-meter-title">
+      SYSTEM RISK METER
+    </div>
+    <div class="risk-meter-progress-wrapper">
+      <div class="risk-meter-progress-inner">
+        <div class="risk-meter-progress" [ngStyle]="{ 'background-size': 100 - progressBarData + '% 100%, 100%, 100% 100%' }">
+        </div>
+      </div>
+      <div class="sum-risk-meter">
+          {{ progressBarData }}%
+      </div>
+    </div>
+  </div>

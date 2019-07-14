@@ -1,0 +1,33 @@
+<div class="dashboard-container">
+
+  <div class="dashboard-row">
+    <div class="dashboard-box main-progress">
+      <app-progress-bar [progressBarData]="progressBarData"></app-progress-bar>
+    </div>
+  </div>
+
+  <div class="dashboard-row">
+    <div class="dashboard-box first">
+      <app-types *ngIf="clearTypes"  [webTypes]="clearTypes" [title]="clearTitle"></app-types>
+    </div>
+    <div class="dashboard-box second">
+      <app-severities *ngIf="clearSeverities" [webSeverities]="clearSeverities" [title]="clearTitle"></app-severities>
+    </div>
+    <div class="dashboard-box three">
+      <app-sources *ngIf="clearsSources" [webSources]="clearsSources" [title]="clearTitle"></app-sources>
+    </div>
+  </div>
+
+  <div class="dashboard-row">
+    <div class="dashboard-box first">
+      <app-types *ngIf="darkTypes" [webTypes]="darkTypes" [title]="darkTitle"></app-types>
+    </div>
+    <div class="dashboard-box second">
+      <app-severities *ngIf="darkSeverities" [webSeverities]="darkSeverities" [title]="darkTitle"></app-severities>
+    </div>
+    <div class="dashboard-box three">
+      <app-sources *ngIf="darkSources" [webSources]="darkSources" [title]="darkTitle"></app-sources>
+    </div>
+  </div>
+
+</div>

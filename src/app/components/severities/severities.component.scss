@@ -1,0 +1,13 @@
+.box-severity {
+  .doughnut-chart {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 0 20px;
+  }
+
+  .severity-footer {
+      display: flex;
+      justify-content: space-around;
+  }
+}

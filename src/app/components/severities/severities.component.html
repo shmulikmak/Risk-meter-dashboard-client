@@ -1,0 +1,16 @@
+<div class="box-title">{{ title }} WEB SEVERITIES</div>
+<div class="box-content box-severity">
+  <div class="doughnut-chart">
+    <canvas baseChart height="140" width="140" [colors]="doughnutColors" [data]="doughnutChartData"
+      [labels]="doughnutChartLabels" [chartType]="doughnutChartType" [legend]="doughnutChartLegend"
+      [options]="doughnutChartOptions">
+    </canvas>
+  </div>
+  <div class="severity-footer">
+    <div *ngFor="let item of webSeverities">
+      {{ item._id.severity | uppercase }}
+      <br>
+      <span class="count-size">{{item.sum}}</span>
+    </div>
+  </div>
+</div>

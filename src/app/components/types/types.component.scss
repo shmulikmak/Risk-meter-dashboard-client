@@ -1,0 +1,26 @@
+@import '../../../styles/color';
+@import '../../../styles/typography';
+
+.box-types {
+  .box-type {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 13px;
+      border-top: 1px solid #243c51;
+
+      .box-type-left {
+          padding-left: 25px;
+
+          .samll-font {
+              font-size: $small-font-size;
+              position: absolute;
+          }
+      }
+
+      .box-type-right {
+          width: 50%;
+
+      }
+  }
+}
